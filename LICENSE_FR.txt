@@ -1,0 +1,24 @@
+Licence & Restrictions d’utilisation
+
+Résumé :
+⚠️ Usage strictement non commercial.
+Toute utilisation commerciale, partielle ou totale, de ce projet est formellement interdite sans une autorisation écrite préalable du propriétaire du projet.
+
+Restrictions spécifiques :
+
+🚫 Interdiction absolue d’utiliser le projet ou une partie de celui-ci (code, contrôleurs, modèles, workflows, ou documentation) à des fins commerciales, même indirectes.
+
+🚫 Interdiction de redistribuer, vendre, héberger ou intégrer ce projet dans un produit ou service destiné à générer un revenu ou un avantage financier.
+
+🚫 Interdiction de copier ou adapter la logique métier (contrôleurs, modèles et workflows) dans un environnement lucratif financiere sans autorisation explicite.
+
+Usage autorisé (sans autorisation) :
+
+✔️ Étude du code pour un usage éducatif, académique ou personnel.
+
+✔️ Expérimentation locale et non commerciale.
+
+Contact pour toute demande d’autorisation exceptionnelle :
+📧 chaib.nassim@outlook.com
+
+© 2025 SN-TECH. Tous droits réservés.
