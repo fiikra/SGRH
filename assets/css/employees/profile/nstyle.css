@@ -1,0 +1,166 @@
+/* Talenteo-inspired style for employee profile, using Bootstrap core class names */
+
+/* Profile header section */
+.employee-profile-header.card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #5262aa;
+    border-radius: 16px;
+    box-shadow: 0px 2px 8px #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.employee-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 60px;
+    border: 3px solid #dc7676;
+    background: #fff;
+    margin-right: 2rem;
+    box-shadow: 0 2px 8px #e1e1e1;
+}
+
+.employee-profile-header .card-title,
+.employee-profile-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+    color: #2a4d8f;
+}
+
+/* Status badge style */
+.badge.employee-status-badge {
+    background: #2a4d8f;
+    color: #fff;
+    padding: 0.4em 1em;
+    border-radius: 12px;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+
+/* Card (general) styling */
+.card.employee-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #e6e6e6;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.card-header,
+.card .card-header {
+    background: #f9f9fb;
+    border-bottom: 1px solid #e3e3e3;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2a4d8f;
+}
+
+/* Meta text */
+.employee-meta {
+    font-size: 1em;
+    color: #7a7a7a;
+    margin-top: 0.2em;
+}
+
+/* Tab navigation styling */
+.nav-tabs.employee-tabs {
+    border-bottom: 2px solid #e1e1e1;
+    background: #f9f9fb;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 2px 8px #e1e1e1;
+    position: sticky;
+    top: 0;
+    z-index: 1090;
+}
+
+.nav-tabs.employee-tabs .nav-link {
+    color: #2a4d8f !important;
+    font-weight: 500;
+    border-radius: 12px 12px 0 0;
+    margin-right: 0.5em;
+    background: transparent;
+    transition: background 0.15s, color 0.15s;
+}
+
+.nav-tabs.employee-tabs .nav-link.active {
+    background: #2a4d8f;
+    color: #fff !important;
+    border-radius: 12px 12px 0 0;
+    font-weight: 600;
+}
+
+.nav-tabs.employee-tabs .nav-link:hover {
+    background: #e3eaf5;
+    color: #214d7c !important;
+}
+
+/* Table tweaks */
+.table.employee-table th, .table.employee-table td {
+    vertical-align: middle;
+    font-size: 0.98rem;
+}
+
+.table.employee-table thead th {
+    background: #eff5fb;
+    font-weight: 600;
+    border-bottom: 2px solid #e0e6ed;
+}
+
+.table-hover.employee-table tbody tr:hover {
+    background: #f5faff;
+}
+
+/* Badge colors */
+.badge.bg-purple { background-color: #6f42c1 !important; color: #fff !important; }
+.badge.bg-pink { background-color: #e83e8c !important; color: #fff !important; }
+.badge.bg-orange { background-color: #fd7e14 !important; color: #fff !important; }
+.badge.bg-teal { background-color: #20c997 !important; color: #fff !important; }
+.badge.bg-indigo { background-color: #6610f2 !important; color: #fff !important; }
+.badge.bg-info.text-dark { color: #000 !important; }
+.badge.bg-warning.text-dark { color: #000 !important; }
+
+/* Table sticky header for attendance */
+.table-sticky-header thead th {
+    position: sticky;
+    top: 0;
+    background: #f8f9fa;
+    z-index: 10;
+}
+
+/* Modal styling */
+.modal-content.employee-modal {
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #d2d2d2;
+    padding: 1.5rem;
+    border: none;
+}
+
+.modal-header.employee-modal-header {
+    background: #f9f9fb;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+@media (max-width: 768px) {
+    .employee-profile-header.card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .employee-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

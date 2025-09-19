@@ -1,0 +1,237 @@
+/* Variables CSS */
+:root {
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --body-bg: #f5f5f5;
+    --card-bg: #fff;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--body-bg);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+}
+
+/* Header */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Features */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Cards */
+.card {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Tables */
+.table {
+    background-color: var(--card-bg);
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+}
+
+/* Forms */
+.form-control, .form-select {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.375rem;
+    padding: 1rem;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+}
+
+.dashboard-card.primary {
+    border-left-color: var(--primary);
+}
+
+.dashboard-card.success {
+    border-left-color: var(--success);
+}
+
+.dashboard-card.warning {
+    border-left-color: var(--warning);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .hero-section .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Custom Utilities */
+.rounded-top-left-0 {
+    border-top-left-radius: 0 !important;
+}
+
+.rounded-top-right-0 {
+    border-top-right-radius: 0 !important;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Document Preview */
+.document-preview {
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+/* Leave Status Badges */
+.badge-approved {
+    background-color: var(--success);
+}
+
+.badge-pending {
+    background-color: var(--warning);
+}
+
+.badge-rejected {
+    background-color: var(--danger);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0b5ed7;
+}
+
+/* Voucher styling */
+.credentials-box {
+    border: 2px dashed #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #voucherContent, #voucherContent * {
+        visibility: visible;
+    }
+    #voucherContent {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+    }
+}
+
+.navbar-logo-img {
+    height: 35px;
+    width: auto; /* Maintains aspect ratio */
+    margin-right: 8px;
+    vertical-align: middle;
+}

@@ -1,5 +1,9 @@
 Système RH — SN-TECH
 
+https://sn-tech.xyz/
+
+
+
 ⚠️ Note importante :
 Le projet est actuellement basé sur un code de type spaghetti.
 Un refactoring complet vers une architecture MVC (PHP Core) est prévu pour améliorer :

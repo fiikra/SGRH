@@ -1,0 +1,13 @@
+# Deny direct access to all PHP files in this folder
+<FilesMatch "\.php$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# But allow access if referred through index.php or router.php
+<If "%{REQUEST_URI} =~ m#^/index\.php|/router\.php#">
+    Allow from all
+</If>
+
+# Disable directory listing
+Options -Indexes

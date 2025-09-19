@@ -1,0 +1,7 @@
+# Close the door …
+Require all denied
+
+# … but reopen it for static assets you want public
+<FilesMatch "\.(css|js|pdf|map|png|jpe?g|gif|svg|woff2?)$">
+    Require all granted
+</FilesMatch>

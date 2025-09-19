@@ -1,0 +1,9 @@
+# Block direct access to PHP files
+RewriteEngine On
+RewriteCond %{THE_REQUEST} \s/+.*\.php[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/index\.php [NC]
+RewriteCond %{REQUEST_URI} !^/router\.php [NC]
+RewriteRule ^.*\.php$ - [F,L]
+
+# Disable directory listing
+Options -Indexes
