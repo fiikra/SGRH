@@ -1,6 +1,16 @@
 Système RH — SN-TECH
 
-Préparé le : 19/09/2025
+⚠️ Note importante :
+Le projet est actuellement basé sur un code de type spaghetti.
+Un refactoring complet vers une architecture MVC (PHP Core) est prévu pour améliorer :
+
+la maintenabilité,
+
+la performance,
+
+la clarté du code,
+
+et la facilité d’évolution.
 
 Aperçu du projet
 
